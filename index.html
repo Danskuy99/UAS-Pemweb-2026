@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>🌦️ Weather Info</h1>
+
+    <input 
+      type="text" 
+      id="city" 
+      placeholder="Masukkan nama kota secara lengkap"
+      onkeypress="if(event.key === 'Enter') getWeather()"
+    />
+
+    <button onclick="getWeather()">Cek Cuaca</button>
+
+    <div id="result" class="result card"></div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
